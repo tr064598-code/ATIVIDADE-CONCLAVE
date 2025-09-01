@@ -1,0 +1,23 @@
+const entrada = require('prompt-sync')({sigint: false});
+let candidatos=[];
+for(let i = 1; i <= 5; i++){
+    let candidatos = entrada('Digite o nome do candidato:');
+    candidatos.push;
+}
+// Array para cadastrar os candidatos.
+const contagemVotos =[0, 0, 0, 0]; // Um contador para cada candidato.
+candidatos = entrada('Escolha o candidato');
+if (candidatos === '1'){
+    contagemVotos[1]++;
+}else if(candidatos === '2'){
+    contagemVotos[2]++;
+}else if(candidatos === '3'){
+    contagemVotos[3]++;
+}else if(candidatos === '4'){
+    contagemVotos[4]++;
+}else if(candidatos === '5'){
+    contagemVotos[5]++;
+}
+for(let i=1; i < candidatos; i++){
+    console.log('${candidatos[i]}, ${contagemVotos[i]} votos');
+}
